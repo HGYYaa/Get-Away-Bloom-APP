@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+#map {
+    height: 49vh;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    line-height: 1
+}
+
+.mdl-layout__content {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.05)), url("../img/Beach1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+
+select {
+    margin-top: 5px;
+    margin-right: 3px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: 0;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    padding: 2.5px;
+    border-radius: 15px;
+}
+
+#form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 35vh;
+}
+
+#form2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 35vh;
+}
+
+#POIWatchList {
+    height: 35vh;
+}
+
+tr {
+    cursor: pointer
+}
+
+.selected {
+    background-color: rgb(154, 166, 192); color: #fff; font-weight: bold
+}
+
+.mdl-button--fab {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#dialogCancel {
+    color: crimson;
+}
+
+#cancelBtn {
+    background-color: rgb(255, 0, 0);
+}

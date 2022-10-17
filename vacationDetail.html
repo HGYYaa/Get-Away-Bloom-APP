@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Detailed Information</title>
+    <!-- MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/detailed.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/Surfing.jpg" type="image" sizes="16x16">
+
+    <!-- Api key -->
+    <script src="js/config.js"></script>
+
+    <!-- Mapbox -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet'>
+
+    <!--Functions to Load-->
+    <script src="https://eng1003.monash/libs/services.js"></script>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- APP Name and Icon-->
+                <span class="material-icons">surfing</span>
+                <span class="mdl-layout-title">Summer Plan</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <!-- The Button in Drawer -->
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Summer Plan</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="index.html">Home</a>
+                <a class="mdl-navigation__link" href="vacationList.html">All Planned Vacation</a>
+            </nav>
+        </div>
+        <!-- Detailed Information -->
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <h3 id="vacationName">Vacation Name</h3>
+                <hr>
+                <!-- Main Content of page -->
+                <div class="mdl-grid">
+                    <!-- first col -->
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+                        <div id="map"></div>
+                    </div>
+
+                    <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet">
+                        <div>
+                            <span class="label">Starting Location: </span>
+                            <span id="startingLocation" class="data"></span>
+                        </div>
+                    
+                        <div>
+                            <span class="label">Destination: </span>
+                            <span id="destination" class="data"></span>
+                        </div>
+                    
+                        <div>
+                            <span class="label">Vehicle Range: </span>
+                            <span id="vehicleRange" class="data"></span>
+                        </div>
+                    
+                        <div>
+                            <span class="label">Total Distance: </span>
+                            <span id="totalDistance" class="data"></span>
+                        </div>
+                    
+                        <div>
+                            <span class="label">Number of Stops: </span>
+                            <span id="totalNumberOfStops" class="data"></span>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+</body>
+
+<!-- <script src="js/shared.js"></script> -->
+    <script src="js/services.js"></script>
+    <script src="js/shared.js"></script>
+    <script src="js/vacationDetail.js"></script>
+
+</html>
